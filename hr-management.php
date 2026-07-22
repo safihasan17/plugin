@@ -23,6 +23,77 @@ function hr_management_menu()
 add_action('admin_menu', 'hr_management_menu');
 
 
+//department
+
+function hr_department_add()
+{
+
+include_once (__DIR__. '/templetes/department/hr-department-add.php');
+
+}
+
+
+include_once (__DIR__. '/templetes/department/hr-department-edit.php');
+
+include_once (__DIR__. '/templetes/department/hr-department-manage.php');
+
+
+// designation
+
+function hr_designation_add()
+{
+
+   include_once (__DIR__. '/templetes/designation/hr-designation-add.php');
+}
+
+
+function hr_designation_edit()
+{
+  
+  include_once (__DIR__. '/templetes/designation/hr-designation-edit.php');
+
+}
+
+
+function hr_designation_list()
+{
+
+  include_once (__DIR__. '/templetes/designation/hr-designation-manage.php');
+
+}
+
+
+// employee
+
+
+function hr_employee_add()
+{
+  
+    include_once (__DIR__. '/templetes/employees/hr-employee-add.php');
+
+}
+
+
+function hr_employee_edit()
+{
+  
+    include_once (__DIR__. '/templetes/employees/hr-employee-edit.php');
+
+}
+
+
+function hr_employee_list()
+{
+  
+    include_once (__DIR__. '/templetes/employees/hr-employee-manage.php');
+
+}
+
+
+
+
+
+
 function hr_management_db()
 {
    
@@ -31,3 +102,6 @@ function hr_management_db()
 }
 
 register_activation_hook(__FILE__, 'hr_management_db');
+
+
+
